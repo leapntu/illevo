@@ -1,0 +1,164 @@
+{
+  "1": {
+    "id": 1,
+    "shape": "circle",
+    "color": "black",
+    "motion": "right"
+  },
+  "2": {
+    "id": 2,
+    "shape": "circle",
+    "color": "black",
+    "motion": "zigzag"
+  },
+  "3": {
+    "id": 3,
+    "shape": "circle",
+    "color": "black",
+    "motion": "spin"
+  },
+  "4": {
+    "id": 4,
+    "shape": "square",
+    "color": "black",
+    "motion": "right"
+  },
+  "5": {
+    "id": 5,
+    "shape": "square",
+    "color": "black",
+    "motion": "zigzag"
+  },
+  "6": {
+    "id": 6,
+    "shape": "square",
+    "color": "black",
+    "motion": "spin"
+  },
+  "7": {
+    "id": 7,
+    "shape": "triangle",
+    "color": "black",
+    "motion": "right"
+  },
+  "8": {
+    "id": 8,
+    "shape": "triangle",
+    "color": "black",
+    "motion": "zigzag"
+  },
+  "9": {
+    "id": 9,
+    "shape": "triangle",
+    "color": "black",
+    "motion": "spin"
+  },
+  "10": {
+    "id": 10,
+    "shape": "circle",
+    "color": "blue",
+    "motion": "right"
+  },
+  "11": {
+    "id": 11,
+    "shape": "circle",
+    "color": "blue",
+    "motion": "zigzag"
+  },
+  "12": {
+    "id": 12,
+    "shape": "circle",
+    "color": "blue",
+    "motion": "spin"
+  },
+  "13": {
+    "id": 13,
+    "shape": "square",
+    "color": "blue",
+    "motion": "right"
+  },
+  "14": {
+    "id": 14,
+    "shape": "square",
+    "color": "blue",
+    "motion": "zigzag"
+  },
+  "15": {
+    "id": 15,
+    "shape": "square",
+    "color": "blue",
+    "motion": "spin"
+  },
+  "16": {
+    "id": 16,
+    "shape": "triangle",
+    "color": "blue",
+    "motion": "right"
+  },
+  "17": {
+    "id": 17,
+    "shape": "triangle",
+    "color": "blue",
+    "motion": "zigzag"
+  },
+  "18": {
+    "id": 18,
+    "shape": "triangle",
+    "color": "blue",
+    "motion": "spin"
+  },
+  "19": {
+    "id": 19,
+    "shape": "circle",
+    "color": "red",
+    "motion": "right"
+  },
+  "20": {
+    "id": 20,
+    "shape": "circle",
+    "color": "red",
+    "motion": "zigzag"
+  },
+  "21": {
+    "id": 21,
+    "shape": "circle",
+    "color": "red",
+    "motion": "spin"
+  },
+  "22": {
+    "id": 22,
+    "shape": "square",
+    "color": "red",
+    "motion": "right"
+  },
+  "23": {
+    "id": 23,
+    "shape": "square",
+    "color": "red",
+    "motion": "zigzag"
+  },
+  "24": {
+    "id": 24,
+    "shape": "square",
+    "color": "red",
+    "motion": "spin"
+  },
+  "25": {
+    "id": 25,
+    "shape": "triangle",
+    "color": "red",
+    "motion": "right"
+  },
+  "26": {
+    "id": 26,
+    "shape": "triangle",
+    "color": "red",
+    "motion": "zigzag"
+  },
+  "27": {
+    "id": 27,
+    "shape": "triangle",
+    "color": "red",
+    "motion": "spin"
+  }
+}
