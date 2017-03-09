@@ -3,14 +3,35 @@
 <head>
   <title>ILLEVO Login</title>
   <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/index.js"></script>
   <link rel="icon" type="image/png" href="../favicon.png"/>
-  <script>
-  socket = io()
-  </script>
+  <link rel="stylesheet" href="../js/lib/bootstrap.min.css">
+  <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <p> Welcome to the Iterated Learning in Langage EVOlution web-based study - ILLEVO for short.</p>
+  <div id=main class="container">
+    <div class="row">  <div class="col-xs-12"><br><br></div> </div>
+    <div class="jumbotron">
+    <h1>ILLEVO</h1>
+    <p>Welcome to the LEAP lab's online portal for language evolution experiments</p>
+    <p>Please create a new user using your matric number as login, and a password that is easy to remember
+    </div>
+
+    <div class="row text-center">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4 well">
+        <input type="text" id="user_name" placeholder="user name"><br><br>
+        <input type="text" id="password" placeholder="password"><br><br>
+        <button class="btn btn-default" id=new_user onclick=newUser()>New User</button>
+        <button class="btn btn-default" id=login onclick=login()>Login</button>
+      </div>
+      <div class="col-xs-4"></div>
+    </div>
+  </div>
 </body>
 
 </html>

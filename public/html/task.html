@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>ILLEVO</title>
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="../js/task.js"></script>
 <link rel="icon" type="image/png" href="../favicon.png"/>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/lib/createjs-2015.11.26.min.js"></script>
+<script src="../js/task.js"></script>
 </head>
-
-<body onload="init()">
+<body onload=init()>
   <canvas id="canvas" width="800" height="600" style="border: black solid 1px"></canvas>
+  <div id="production_controls" style="visibility: hidden">
+    (Write your best alien language description below)
+      </br>
+      <input type="text" id="response" size=40>
+  </div>
 </body>
-
 </html>

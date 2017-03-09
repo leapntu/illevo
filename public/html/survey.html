@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      * {
+          font-family: 'Open Sans', Avenir, Helvetica, Arial, sans-serif;
+      }
+
+      body {
+          max-width: 1024px;
+          margin: 10px auto;
+      }
+
+      p {
+          text-align: justify;
+      }
+
+      h1 {
+          font-size: 1.6em;
+          text-align: center;
+      }
+
+      h2 {
+          margin: 0px 0px 20px 0px;
+      }
+
+      p .names {
+          font-variant: small-caps;
+      }
+
+      button {
+          font-size: 1em;
+      }
+
+  </style>
+
+  <!-- <link rel="stylesheet" href="../js/lib/bootstrap.min.css"> -->
+  <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/bootstrap.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="icon" type="image/png" href="../favicon.png"/>
+  <script src="../js/survey.js"></script>
+</head>
+
+<body>
+  <div align="center"><img id="leap-logo" src="../media/leap_logo.png"/></div>
+  <h1>Welcome</h1>
+  <p>Before we can begin the experiment, we need to ask you a couple of quick questions regarding your self and your linguistic background.</p>
+  <br>
+  <hr>
+  <br>
+  <h1>Survey</h2>
+    What is/are your native language(s)?*  <input type="text" id="native" size=50> <br><br>
+    Which (if any) second-languages have you studied to an advanced level?** <input type="text" id="second" size=50> <br><br>
+    How many years old are you? <input type="text" id=age> <br><br>
+    What is your sex?
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option></select> <br><br>
+    What is a good email to reach you at with follow-up information? <input type="text" id="email" size=50> <br><br><br>
+    <button class="btn btn-default" id=new_user onclick=survey()>Submit and continue to experiment</button>
+    <br><br>
+    <hr>
+    * Native means learned at home by listening to your immediate family speak. <br>
+    <br>
+    ** Second-language here means you had to take classes or lessons or get a book - unlike the native above, you didn't just find yourself speaking as a part of growing up. Advanced means you currently, or for an extended period of time in the past, used a language for conversation, either for work or socializing.<br>
+</body>
+
+</html>

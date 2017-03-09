@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consent</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <link rel="stylesheet" href="../js/lib/bootstrap.min.css"> -->
+  <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../favicon.png"/>
+</head>
+
+<body>
+<style>
+#leap-logo {display: leap-logo}
+h1 {font-size: 1.6em; text-align: center}
+h2 {margin: 0px 0px 20px 0px}
+ol {width: 70%}
+ol li {padding: 15px}
+p .names {font-variant: small-caps}
+form input #proceed {width: 200px; height: 50px; margin: 40px auto 20px auto; display: block;
+    background-color: #eee; color: #666; text-shadow: 1px 1px 1px #fff; font-family: Avenir, Helvetica, Arial, sans-serif;
+    border: 1px solid #ddd; border-bottom: 6px solid rgba(150, 150, 150, .7); border-radius: 10px; font-size: 1.2em; font-weight: bold; outline: 0;
+        }
+
+.chrome-info {text-align: center}
+</style>
+
+</head>
+<body><!-- onload="refs()">-->
+
+
+<div align="center"><img id="leap-logo" src="../media/ntu_logo.jpg" /></div>
+
+
+<h1>Informed Consent</h1>
+
+<div class="chrome-info">
+<h2>Basic mechanisms of learning in adulthood</h2>
+Principal Investigator: Dr Luca ONNIS<br />
+<small>Linguistics and Multilingual Studies, HSS<br />
+Nanyang Technological University</small>
+</div>
+
+<p>As part of this study, you will be asked to listen to a sequence of sounds, or to pay attention to a sequence of visual objects. You will also be asked to read a list of simple sentences. Depending on your language you may be asked to fill out a brief language background questionnaire.</p>
+
+<p>Although you may not receive direct benefit from this study, research in this area is of general benefit to society. The results will help us understand the processes involved in learning and using language. This knowledge will aid in improving effective teaching of a second language, or treating individuals with language disorders in the future.</p>
+
+<p>There are no known discomforts or risks associated with participation in this study. The information you provide will remain confidential and will be used only for the purpose of the research. Your name will not be identified in any report of the results.</p>
+
+<p>Your participation is voluntary and there is no penalty for refusing to participate. You can withdraw at any time you wish.</p>
+
+
+<h2 style="border-top: 1px solid #ccc">Inquiries</h2>
+
+<p>This study has been approved by the <span class="names">Human Research Ethics Committee</span> of Nanyang Technological University. If you have any questions or concerns about the research, please feel free to contact <span class="names">Dr Luca Onnis</span> at 14 Nanyang Drive, Nanyang Technological University, Singapore (email lucao@ntu.edu.sg), or contact the IRB secretariat <span class="names">Ms Germaine Foo</span> at 65922495 or irb@ntu.edu.sg.</p>
+
+<h2 style="border-top: 1px solid #ccc">Confirmation</h2>
+
+By proceeding, I:
+
+<p>
+	<ol>
+		<li>Confirm that I have read and understood the information sheet for the above study and have had the opportunity to ask questions.</li>
+		<li>Understand that my participation is voluntary and that I am free to withdraw at any time, without giving any reason, without my medical care or legal rights being affected.</li>
+		<li>Agree to take part in the above study.</li>
+	</ol>
+</p>
+
+  <button id="agree">Agree and proceed to experiment</button>
+  <button id="decline">Decline and leave</button>
+</body>
+
+</html>
+
+<script src="../js/consent.js"></script>
