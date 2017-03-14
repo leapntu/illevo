@@ -1,4 +1,7 @@
 socket = io.connect()
+
+if (localStorage.illevo_ready == 0) {document.location.href = "../index.html"}
+
 function enter () {
   gender = localStorage.illevo_gender
   socket.emit('join_lineage', gender, function (response) {

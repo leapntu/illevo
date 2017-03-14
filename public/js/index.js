@@ -19,6 +19,7 @@ function login () {
       localStorage.illevo_gender = response.gender
       localStorage.illevo_consent = response.consent
       localStorage.illevo_user_id = response.id
+      localStorage.illevo_ready = 1
       if (response.consent != 1) {
         console.log("needs consent"); document.location.href="html/consent.html"
       }

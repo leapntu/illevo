@@ -8,14 +8,23 @@ var sql = require('sqlite3')
 var db = new sql.Database('data.db')
 var wdb = new sql.Database('data.db')
 db.exec("PRAGMA BUSY_TIMEOUT=60000;") //always open db connection for read-only queries
+
 //queries that require a lock will be spawened individually as needed, and named wdb
 
 //Web Socket Interface
 io.on('connection', function (socket) {
+    let running = 0
+    let working_on = ''
     console.log(`Connected to socket: ${socket.id}`)
 
   socket.on('disconnect', function () {
       console.log(`Disconnected from socket: ${socket.id}`)
+      if (running == 1) {
+        let wdb = new sql.Database('data.db')
+        wdb.exec(`begin exclusive transaction;`)
+        wdb.exec(`update lineage set open = 1 where id = ${working_on}; commit transaction;`)
+        console.log(`${socket.id} has stopped working_on ${working_on}`)
+      }
   })
 
   socket.on('login', function (user_name, password, response) {
@@ -69,6 +78,12 @@ io.on('connection', function (socket) {
       wdb.exec(`begin exclusive transaction;`)
       wdb.exec(`update lineage set open = 1 where id = ${lineage}; commit transaction;`)
       response("left")
+  })
+
+  socket.on('register_start', function(lineage) {
+    running = 1
+    working_on = lineage
+    console.log(`${socket.id} is working on ${working_on}`)
   })
 
 
