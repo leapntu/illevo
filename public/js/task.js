@@ -260,8 +260,9 @@ function handleScene() {
 
   if (scene == 12) {
     socket.emit('record_data', round_3, localStorage.illevo_lineage, localStorage.illevo_generation, localStorage.illevo_user_id ,function(){
-      posttest3_msg = makeMessage("Good Job - That completes The study!.\n Thank you for your time and feel free to\nclose the browser tab when you are done.\n\n If you would like to learn more about this study,\n please visit http://54.169.226.46/html/about.html")
+      posttest3_msg = makeMessage("Good Job - That completes The study!.\n Thank you for your time and feel free to\nclose the browser tab when you are done.\n\n If you would like to learn more about this study,\n please visit http://54.169.226.46/html/about.html\n\nA link is provided below.")
       stage.addChild(posttest3_msg)
+      document.getElementById("end_link").style.visibility = "visible"
     })
   }
 
