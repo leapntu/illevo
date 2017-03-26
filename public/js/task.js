@@ -2,7 +2,6 @@
 window.addEventListener("beforeunload", function (event) {
   // socket.emit('free_lineage', localStorage.illevo_lineage, function(response){
   //   console.log(`leaving ${localStorage.illevo_lineage}`)
-    localStorage.illevo_lineage = 0
     localStorage.illevo_ready = 0
   // })
 })

@@ -113,6 +113,12 @@ io.on('connection', function (socket) {
     })
   })
 
+  socket.on('get_view', function(response){
+    db.all(`select * from language join dataevents on dataevents.id = language.dataevent order by lineage, generation, stimuli;`, function(err, rows){
+      response(rows)
+    })
+  })
+
   // socket.on('render', function (page) {
   //   console.log("custom render",`public/html/${page}.html`)
   //   fs.readFile(`public/html/${page}.html`, 'utf-8', function (err, data) {
