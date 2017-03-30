@@ -47,7 +47,7 @@ function dist(a, b){
 function calculate(){
   for (let l of [0,1,2,3,4,5,6]){
     data[l]={}
-    for (let g of [0,1,2,3,4,5,6,7,8,9,10]){
+    for (let g of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]){
       data[l][g] ={}
       for (let s of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26])
         data[l][g][s] = ""
@@ -60,7 +60,7 @@ function calculate(){
     var next_line = { name:`Lineage ${l} - ${l in [0,1,2,3] ? 'female' : 'male'}`}
     next_line['x'] = []
     next_line['y'] = []
-    for (let g of [1,2,3,4,5,6,7,8,9,10]){
+    for (let g of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]){
       if ( data[l][g][1] != ""){
         var err = 0.0
         for (let s of  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]) {
